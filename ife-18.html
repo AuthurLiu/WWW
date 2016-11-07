@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ife_18</title>
+	<style>
+	.wrap{
+		width:1200px;
+		margin:50px auto 0;
+	}
+	.rander-wrap{
+		margin:0 auto;
+		width:500px;
+		
+	}
+	.item{
+		margin-top:10px;
+		margin-right: 5px;
+		height:50px;
+		width:50px;
+		display:inline-block;
+		background: #EE1111;
+		text-align: center;
+		line-height: 50px;
+		font-size: 20px;
+		color:#fff;
+		border-radius: 5px;
+	}
+	.empty{
+		width:50px;
+		height:1px;
+		display:inline-block;
+	}
+	button{
+		background: #fff;
+		height:30px;
+		width:65px;
+		border:1px solid #BBBBBB;
+		border-radius: 5px
+
+	}
+	input{
+		height:20px;
+	}
+	form{
+		margin:0 auto;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<form action="">
+			<input type="text" name="input-val" id="input-val">
+			<button id="in-left">左侧入</button>
+			<button id="in-right">右侧入</button>
+			<div class="empty"></div>
+			<button id="out-left">左侧出</button>
+			<button id="out-right">右侧出</button>
+		</form>
+		<div id="rander-wrap" class="rander-wrap">
+			
+		</div>
+	</div>
+	<script>
+	var CookieUtil = {
+		get: function(name) {
+			var cookieName = encodeURIComponent(name) + "=",
+				cookieStart = document.cookie.indexOf(cookieName),
+				cookieValue = null;
+			if (cookieStart > -1) {
+				var cookieEnd = document.cookie.indexOf(";", cookieStart);
+				if (cookieEnd == -1) {
+					cookieEnd = document.cookie.length;
+				}
+				cookieValue = decodeURIComponent(document.cookie.substring(cookieStart + cookieName.length, cookieEnd));
+			}
+			return cookieValue;
+		},
+		set: function(name, value, expires, path, domain, secure) {
+			var cookieText = encodeURIComponent(name) + "=" +
+				encodeURIComponent(value);
+			if (expires instanceof Date) {
+				cookieText += "; expires=" + expires.toGMTString();
+			}
+			if (path) {
+				cookieText += "; path=" + path;
+			}
+			if (domain) {
+				cookieText += "; domain=" + domain;
+			}
+			if (secure) {
+				cookieText += "; secure";
+			}
+			document.cookie = cookieText;
+		},
+		unset: function(name, path, domain, secure) {
+			this.set(name, "", new Date(0), path, domain, secure);
+		}
+	};
+
+
+
+	var queueData = []; 
+	function wrapRender(){
+		var innerHTML = "";
+		queueData.forEach(function(item){
+			innerHTML += "<div class='item'>"+item+"</div>";
+		});
+		var randerWrap = document.getElementById("rander-wrap");
+		randerWrap.innerHTML = innerHTML;
+	}
+	function inputLeft(e){
+		e.preventDefault();
+		var input = document.forms[0].elements["input-val"];
+		var inputVal = input.value;
+		if(inputVal){
+			CookieUtil.set("input",""+inputVal);
+		}else{
+			inputVal = CookieUtil.get("input");
+		}
+		queueData.unshift(inputVal);
+		wrapRender();
+		input.value = "";
+		
+	}
+	function inputRight(e){
+		e.preventDefault();
+		var input = document.forms[0].elements["input-val"];
+		var inputVal = input.value;
+		if(inputVal){
+			CookieUtil.set("input",""+inputVal);
+		}else{
+			inputVal = CookieUtil.get("input");
+		}
+		queueData.push(inputVal);
+		wrapRender();
+		input.value = "";
+		
+	}
+	function outputLeft(e){
+		e.preventDefault();
+		queueData.shift();
+		wrapRender();
+		
+		
+	}
+	function outputRight(e){
+		e.preventDefault();
+		
+		queueData.pop();
+		wrapRender();
+		
+		
+	}
+	function initData(){
+		var inLeft  = document.getElementById("in-left");
+		var inRight  = document.getElementById("in-right");
+		var outLeft  = document.getElementById("out-left");
+		var outRight  = document.getElementById("out-right");
+		inLeft.addEventListener("click",inputLeft);
+		inRight.addEventListener("click",inputRight);
+		outLeft.addEventListener("click",outputLeft);
+		outRight.addEventListener("click",outputRight);
+	}
+	initData();
+	</script>
+</body>
+</html>

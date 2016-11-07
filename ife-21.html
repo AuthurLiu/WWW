@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ife_21</title>
+	<style>
+	.wrap{
+		width:1200px;
+		margin:50px auto 0;
+	}
+	.rander-wrap{
+
+		margin:0px auto 50px;
+		width:800px;
+		
+	}
+	.item{
+		padding:0 5px;
+		margin-top:10px;
+		margin-right: 5px;
+		height:30px;
+		min-width:60px;
+		display:inline-block;
+		background: #EE1111;
+		text-align: center;
+		line-height: 30px;
+		font-size: 14px;
+		color:#fff;
+		border-radius: 5px;
+	}
+	.item-show{
+		background:#33CCFF;
+	}
+	.empty{
+		width:50px;
+		height:1px;
+		display:inline-block;
+	}
+	button{
+		background: #fff;
+		height:30px;
+		width:65px;
+		border:1px solid #BBBBBB;
+		border-radius: 5px
+
+	}
+	input{
+		height:20px;
+	}
+	form{
+		width:800px;
+		margin:0 auto;
+		
+	}
+	.title{
+		border-bottom: 1px #BBB solid;
+		margin-bottom: 12px;
+		font-size: 18px;
+		color:gray;
+		padding-bottom: 2px;
+	}
+	.row{
+		/*text-align: center;*/
+		margin-bottom:30px;	
+	}
+	.row input{
+		vertical-align: middle;
+	}
+	.row button{
+		vertical-align: middle;
+		width:200px;
+	}
+	.input-form textarea{
+
+		/*display:inline-block;*/
+		vertical-align: middle;
+		height:50px;
+		width:300px;
+		resize: none;
+		margin-right: 20px
+	}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<form id = "input-form-1" class="input-form" action="">
+			<div class="row">
+				<label for="input-tag">Tag:</label>
+				<input type="text" name="input-val-tag" id="input-val-tag">	
+			</div>		
+		</form>
+		<div id="rander-wrap-tag" class="rander-wrap"><div class="item">jsasfdasfasdfafasdfsdf</div></div>
+		<form id="input-form-2" class="input-form">
+			<div class="row">
+				<textarea name="input-val-hobby" id="input-val-hobby"></textarea>
+			</div>
+			<div class="row">
+				<button id="confirm-hobby">确认兴趣爱好</button>
+			</div>
+		</form>
+		<div id="rander-wrap-hobby" class="rander-wrap"><div class="item">js</div></div>
+	</div>
+	<script>
+	var CookieUtil = {
+		get: function(name) {
+			var cookieName = encodeURIComponent(name) + "=",
+				cookieStart = document.cookie.indexOf(cookieName),
+				cookieValue = null;
+			if (cookieStart > -1) {
+				var cookieEnd = document.cookie.indexOf(";", cookieStart);
+				if (cookieEnd == -1) {
+					cookieEnd = document.cookie.length;
+				}
+				cookieValue = decodeURIComponent(document.cookie.substring(cookieStart + cookieName.length, cookieEnd));
+			}
+			return cookieValue;
+		},
+		set: function(name, value, expires, path, domain, secure) {
+			var cookieText = encodeURIComponent(name) + "=" +
+				encodeURIComponent(value);
+			if (expires instanceof Date) {
+				cookieText += "; expires=" + expires.toGMTString();
+			}
+			if (path) {
+				cookieText += "; path=" + path;
+			}
+			if (domain) {
+				cookieText += "; domain=" + domain;
+			}
+			if (secure) {
+				cookieText += "; secure";
+			}
+			document.cookie = cookieText;
+		},
+		unset: function(name, path, domain, secure) {
+			this.set(name, "", new Date(0), path, domain, secure);
+		}
+	};
+
+
+
+	var queueDataTag = [],
+		queueDataHobby = []; 
+	function wrapRenderTag(){
+		var innerHTML = "";
+		queueDataTag.forEach(function(item){
+			innerHTML += "<div class='item'>"+item+"</div>";
+		});
+		var randerWrapTag = document.getElementById("rander-wrap-tag");
+		randerWrapTag.innerHTML = innerHTML;
+	}
+	function wrapRenderHobby(){
+		var innerHTML = "";
+		queueDataHobby.forEach(function(item){
+			innerHTML += "<div class='item'>"+item+"</div>";
+		});
+		var randerWrapHobby = document.getElementById("rander-wrap-hobby");
+		randerWrapHobby.innerHTML = innerHTML;
+	}
+	function inputFilter(input){
+		var inputArr = input.split(/[\s\uff1b\u003b\u3001\uff0c\u002c\u3000]/);
+		return inputArr;
+	}
+	function inputLeft(e){
+		e.preventDefault();
+		var input = document.forms[0].elements["input-val"];
+		var inputVal = input.value;
+		if(inputVal){
+			CookieUtil.set("input",""+inputVal);
+		}else{
+			inputVal = CookieUtil.get("input");
+		}
+		inputVal = inputFilter(inputVal);
+		inputVal.forEach(function(item){
+			queueData.unshift(item);
+		});
+		
+		wrapRender();
+		input.value = "";
+		
+	}
+	function inputRight(e){
+		e.preventDefault();
+		var input = document.forms[0].elements["input-val"];
+		var inputVal = input.value;
+		if(inputVal){
+			CookieUtil.set("input",""+inputVal);
+		}else{
+			inputVal = CookieUtil.get("input");
+		}
+		inputVal = inputFilter(inputVal);
+		inputVal.forEach(function(item){
+			queueData.push(item);
+		});
+		
+		wrapRender();
+		input.value = "";
+		
+	}
+	function outputLeft(e){
+		e.preventDefault();
+		queueData.shift();
+		wrapRender();
+		
+		
+	}
+	function outputRight(e){
+		e.preventDefault();
+		
+		queueData.pop();
+		wrapRender();
+		
+		
+	}
+	function searchVal(e){
+		e.preventDefault();
+		var randerWrap = document.getElementById("rander-wrap");
+		
+		var searchVal = document.forms[0].elements['search'].value.trim();
+		var child;
+		if(searchVal&&randerWrap.children.length>0){
+			randerWrap.innerHTML = randerWrap.innerHTML.replace(/(<span.*?>)|(<\/span>)/g,"");
+			for(child=randerWrap.firstChild;child!=randerWrap.lastChild;child = child.nextElementSibling){
+				
+				var srcStr = child.innerText;
+				var srcArr = srcStr.split(searchVal);
+				var lastStr = "";
+				if(srcArr.length>1){
+					lastStr = srcArr.join("<span class='item-show'>"+searchVal+"</span>");
+					child.innerHTML =  lastStr;
+				}
+			}
+		}
+		document.forms[0].elements['search'].value = "";	
+		
+
+	}
+	var srcContent = ["语文","数学","英语","物理","化学","生物"];
+	function initData(){
+		var inLeft  = document.getElementById("in-left");
+		var inRight  = document.getElementById("in-right");
+		var outLeft  = document.getElementById("out-left");
+		var outRight  = document.getElementById("out-right");
+		var valSearch  = document.getElementById("val-search");
+		
+		inLeft.addEventListener("click",inputLeft);
+		inRight.addEventListener("click",inputRight);
+		outLeft.addEventListener("click",outputLeft);
+		outRight.addEventListener("click",outputRight);
+		valSearch.addEventListener("click",searchVal);
+		document.forms[0].elements['search'].value = "";
+		document.forms[0].elements["input-val"].value = "";
+		var i;
+		for(i=0;i<6;i++){
+			var temp = Math.round(Math.random()*5);
+			var srcTemp = srcContent[temp];
+			queueData.push(srcTemp);
+		}
+		wrapRender();
+	}
+	initData();
+
+	</script>
+</body>
+</html>
+
+
+
+
