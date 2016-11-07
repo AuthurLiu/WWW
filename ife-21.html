@@ -77,7 +77,7 @@
 		height:50px;
 		width:300px;
 		resize: none;
-		margin-right: 20px
+		margin-right: 20px；
 	}
 
 	</style>
@@ -142,6 +142,12 @@
 
 	var queueDataTag = [],
 		queueDataHobby = []; 
+
+	/**
+	    *函数名：渲染标签
+	    *参数：无
+	    *返回值：无
+	**/
 	function wrapRenderTag(){
 		var innerHTML = "";
 		queueDataTag.forEach(function(item){
@@ -149,7 +155,14 @@
 		});
 		var randerWrapTag = document.getElementById("rander-wrap-tag");
 		randerWrapTag.innerHTML = innerHTML;
+		document.forms[0].elements['input-val-tag'].value = "";
 	}
+
+	/**
+	    *函数名：渲染爱好
+	    *参数：无
+	    *返回值：无
+	**/
 	function wrapRenderHobby(){
 		var innerHTML = "";
 		queueDataHobby.forEach(function(item){
@@ -158,106 +171,137 @@
 		var randerWrapHobby = document.getElementById("rander-wrap-hobby");
 		randerWrapHobby.innerHTML = innerHTML;
 	}
+
+	/**
+	    *函数名：分隔字符串 将得到的数组放入一个无重的集合中
+	    *参数：输入字符串
+	    *返回值：去重后的集合
+	**/
 	function inputFilter(input){
+		input = input.trim();
 		var inputArr = input.split(/[\s\uff1b\u003b\u3001\uff0c\u002c\u3000]/);
-		return inputArr;
-	}
-	function inputLeft(e){
-		e.preventDefault();
-		var input = document.forms[0].elements["input-val"];
-		var inputVal = input.value;
-		if(inputVal){
-			CookieUtil.set("input",""+inputVal);
-		}else{
-			inputVal = CookieUtil.get("input");
-		}
-		inputVal = inputFilter(inputVal);
-		inputVal.forEach(function(item){
-			queueData.unshift(item);
+		var inputSet = [];
+		inputArr.forEach(function(item){
+			var hadMark = queueDataTag.some(function(itemInner){
+				if(itemInner==item){
+					return true;
+				}
+			});
+			if(!hadMark){
+				inputSet.push(item);
+			}
 		});
-		
-		wrapRender();
-		input.value = "";
-		
+		return inputSet;
 	}
-	function inputRight(e){
+	
+
+	// function inputLeft(e){
+	// 	e.preventDefault();
+	// 	var input = document.forms[0].elements["input-val"];
+	// 	var inputVal = input.value;
+	// 	if(inputVal){
+	// 		CookieUtil.set("input",""+inputVal);
+	// 	}else{
+	// 		inputVal = CookieUtil.get("input");
+	// 	}
+	// 	inputVal = inputFilter(inputVal);
+	// 	inputVal.forEach(function(item){
+	// 		queueData.unshift(item);
+	// 	});
+		
+	// 	wrapRender();
+	// 	input.value = "";
+		
+	// }
+
+	/**
+	    *函数名：id=input-val-tag 按钮绑定函数
+	    *参数：event
+	    *返回值：无
+	**/
+	function inputTagValue(e){
 		e.preventDefault();
-		var input = document.forms[0].elements["input-val"];
-		var inputVal = input.value;
-		if(inputVal){
-			CookieUtil.set("input",""+inputVal);
-		}else{
-			inputVal = CookieUtil.get("input");
-		}
-		inputVal = inputFilter(inputVal);
-		inputVal.forEach(function(item){
-			queueData.push(item);
-		});
-		
-		wrapRender();
-		input.value = "";
-		
-	}
-	function outputLeft(e){
-		e.preventDefault();
-		queueData.shift();
-		wrapRender();
-		
-		
-	}
-	function outputRight(e){
-		e.preventDefault();
-		
-		queueData.pop();
-		wrapRender();
-		
-		
-	}
-	function searchVal(e){
-		e.preventDefault();
-		var randerWrap = document.getElementById("rander-wrap");
-		
-		var searchVal = document.forms[0].elements['search'].value.trim();
-		var child;
-		if(searchVal&&randerWrap.children.length>0){
-			randerWrap.innerHTML = randerWrap.innerHTML.replace(/(<span.*?>)|(<\/span>)/g,"");
-			for(child=randerWrap.firstChild;child!=randerWrap.lastChild;child = child.nextElementSibling){
-				
-				var srcStr = child.innerText;
-				var srcArr = srcStr.split(searchVal);
-				var lastStr = "";
-				if(srcArr.length>1){
-					lastStr = srcArr.join("<span class='item-show'>"+searchVal+"</span>");
-					child.innerHTML =  lastStr;
+		if(e.keyCode==13){
+			var input = e.target;
+			if(input.id=="input-val-tag"){
+				var inputVal = input.value;
+				inputTagItem(inputVal);
+				if(queueDataTag.length>=10){
+					var num = queueData.length-9;
+					outputItem(num);
 				}
 			}
+			wrapRenderTag();
 		}
-		document.forms[0].elements['search'].value = "";	
+	}
+
+	/**
+	    *函数名：函数入栈
+	    *参数：input：text输入字符串
+	    *返回值：无
+	**/
+	function inputTagItem(input){
+
+		inputVal = inputFilter(input);//分隔
+		inputVal.forEach(function(item){
+			queueDataTag.push(item);//遍历入栈
+		});
+	}
+
+	/**
+	    *函数名：函数出栈
+	    *参数：出栈条数
+	    *返回值：无
+	**/
+	function outputItem(num){
+		for(var i = 0;i<num;i++){
+			queueDataTag = queueDataTag.shift();
+		}
+	}
+
+	// function outputRight(e){
+	// 	e.preventDefault();
+		
+	// 	queueData.pop();
+	// 	wrapRender();
+		
+		
+	// }
+	// function searchVal(e){
+	// 	e.preventDefault();
+	// 	var randerWrap = document.getElementById("rander-wrap");
+		
+	// 	var searchVal = document.forms[0].elements['search'].value.trim();
+	// 	var child;
+	// 	if(searchVal&&randerWrap.children.length>0){
+	// 		randerWrap.innerHTML = randerWrap.innerHTML.replace(/(<span.*?>)|(<\/span>)/g,"");
+	// 		for(child=randerWrap.firstChild;child!=randerWrap.lastChild;child = child.nextElementSibling){
+				
+	// 			var srcStr = child.innerText;
+	// 			var srcArr = srcStr.split(searchVal);
+	// 			var lastStr = "";
+	// 			if(srcArr.length>1){
+	// 				lastStr = srcArr.join("<span class='item-show'>"+searchVal+"</span>");
+	// 				child.innerHTML =  lastStr;
+	// 			}
+	// 		}
+	// 	}
+	// 	document.forms[0].elements['search'].value = "";	
 		
 
-	}
-	var srcContent = ["语文","数学","英语","物理","化学","生物"];
+	// }
+	// var srcContent = ["语文","数学","英语","物理","化学","生物"];
 	function initData(){
-		var inLeft  = document.getElementById("in-left");
-		var inRight  = document.getElementById("in-right");
-		var outLeft  = document.getElementById("out-left");
-		var outRight  = document.getElementById("out-right");
-		var valSearch  = document.getElementById("val-search");
+		var inputValTag = document.getElementById("input-val-tag");
+		var inputValHobby  = document.getElementById("input-val-hobby");
 		
-		inLeft.addEventListener("click",inputLeft);
-		inRight.addEventListener("click",inputRight);
-		outLeft.addEventListener("click",outputLeft);
-		outRight.addEventListener("click",outputRight);
-		valSearch.addEventListener("click",searchVal);
-		document.forms[0].elements['search'].value = "";
-		document.forms[0].elements["input-val"].value = "";
-		var i;
-		for(i=0;i<6;i++){
-			var temp = Math.round(Math.random()*5);
-			var srcTemp = srcContent[temp];
-			queueData.push(srcTemp);
-		}
-		wrapRender();
+		
+		inputValTag.addEventListener("keydown",inputTagValue);
+		
+		
+		document.forms[1].elements["input-val-hobby"].value = "";
+		
+		wrapRenderTag();
 	}
 	initData();
 
