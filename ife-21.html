@@ -15,18 +15,38 @@
 		
 	}
 	.item{
+		position: relative;
 		padding:0 5px;
 		margin-top:10px;
-		margin-right: 5px;
-		height:30px;
+		margin-right: 18px;
+		height:32px;
 		min-width:60px;
 		display:inline-block;
 		background: #EE1111;
 		text-align: center;
-		line-height: 30px;
+		line-height: 32px;
 		font-size: 14px;
 		color:#fff;
 		border-radius: 5px;
+	}
+	.item>.close-icon{
+		position: absolute;
+		/*visibility:hidden;*/
+		right:0px;
+		top:0px;
+		/*margin-right: -5px;*/
+		/*border-radius: 0 5px 5px 0;*/
+		width:16px;
+		/*line-height: 32px;*/
+		height:16px;
+		opacity: 0.8;
+		
+
+	}
+	.item>.close-icon:hover{
+		/*visibility:visible;*/
+ 
+		opacity:1;
 	}
 	.item-show{
 		background:#33CCFF;
@@ -90,7 +110,7 @@
 				<input type="text" name="input-val-tag" id="input-val-tag">	
 			</div>		
 		</form>
-		<div id="rander-wrap-tag" class="rander-wrap"><div class="item">jsasfdasfasdfafasdfsdf</div></div>
+		<div id="rander-wrap-tag" class="rander-wrap"></div>
 		<form id="input-form-2" class="input-form">
 			<div class="row">
 				<textarea name="input-val-hobby" id="input-val-hobby"></textarea>
@@ -99,7 +119,8 @@
 				<button id="confirm-hobby">确认兴趣爱好</button>
 			</div>
 		</form>
-		<div id="rander-wrap-hobby" class="rander-wrap"><div class="item">js</div></div>
+		<img src="" alt="">
+		<div id="rander-wrap-hobby" class="rander-wrap"><div class="item">j</div></div>
 	</div>
 	<script>
 	var CookieUtil = {
@@ -290,15 +311,36 @@
 		
 
 	// }
+	function showDelete(e){
+		e.stopPropagation();
+		if(e.target.className=="item"&&(e.relatedTarget.className=="rander-wrap"||"wrap")){
+			var innerHTML = e.target.innerHTML;
+			innerHTML +="<img class='close-icon' src='img/close.png'>"
+			e.target.innerHTML = innerHTML;
+		}
+	}
+	function hiddenDelete(e){
+		e.stopPropagation();
+		if(e.target.className=="item"&&(e.relatedTarget.className=="rander-wrap"||"wrap")){
+			var innerHTML = e.target.innerHTML;
+			innerHTML = innerHTML.replace(/<img.*?>/g,"") ;
+			e.target.innerHTML = innerHTML;
+		}
+	}
+
+
+
+
+
 	// var srcContent = ["语文","数学","英语","物理","化学","生物"];
 	function initData(){
 		var inputValTag = document.getElementById("input-val-tag");
 		var inputValHobby  = document.getElementById("input-val-hobby");
-		
+		var randerWrapHobby = document.getElementById("rander-wrap-hobby");
 		
 		inputValTag.addEventListener("keydown",inputTagValue);
-		
-		
+		randerWrapHobby.addEventListener("mouseover",showDelete);
+		randerWrapHobby.addEventListener("mouseout",hiddenDelete);
 		document.forms[1].elements["input-val-hobby"].value = "";
 		
 		wrapRenderTag();
