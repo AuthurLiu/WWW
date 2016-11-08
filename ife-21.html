@@ -17,8 +17,9 @@
 	.item{
 		position: relative;
 		padding:0 5px;
-		margin-top:10px;
-		margin-right: 18px;
+		/*margin-top:10px;
+		margin-right: 18px;*/
+		margin:10px 18px;
 		height:32px;
 		min-width:60px;
 		display:inline-block;
@@ -313,7 +314,7 @@
 	// }
 	function showDelete(e){
 		e.stopPropagation();
-		if(e.target.className=="item"&&(e.relatedTarget.className=="rander-wrap"||"wrap")){
+		if(e.target.className=="item"&&(e.relatedTarget.className=="rander-wrap"||e.relatedTarget.className=="wrap")){
 			var innerHTML = e.target.innerHTML;
 			innerHTML +="<img class='close-icon' src='img/close.png'>"
 			e.target.innerHTML = innerHTML;
@@ -321,7 +322,7 @@
 	}
 	function hiddenDelete(e){
 		e.stopPropagation();
-		if(e.target.className=="item"&&(e.relatedTarget.className=="rander-wrap"||"wrap")){
+		if(e.target.className=="item"&&(e.relatedTarget.className=="rander-wrap"||e.relatedTarget.className=="wrap")){
 			var innerHTML = e.target.innerHTML;
 			innerHTML = innerHTML.replace(/<img.*?>/g,"") ;
 			e.target.innerHTML = innerHTML;
