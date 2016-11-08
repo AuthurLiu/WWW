@@ -328,6 +328,16 @@
 			e.target.innerHTML = innerHTML;
 		}
 	}
+	function deleteButton(e){
+		if(e.target.tagName=="img"){
+			var targetReal = e.target;
+			while(targetReal.className!="item"){
+				targetReal = targetReal.parentNode;
+			}
+			targetReal.parentNode.removeChild(targetReal);
+		}
+		
+	}
 
 
 
