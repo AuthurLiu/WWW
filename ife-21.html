@@ -12,6 +12,7 @@
 
 		margin:0px auto 50px;
 		width:800px;
+		height:80px;
 		
 	}
 	.item{
@@ -192,6 +193,7 @@
 		});
 		var randerWrapHobby = document.getElementById("rander-wrap-hobby");
 		randerWrapHobby.innerHTML = innerHTML;
+		document.forms[1].elements["input-val-hobby"].value = "";
 	}
 
 	/**
@@ -217,44 +219,49 @@
 	}
 	
 
-	// function inputLeft(e){
-	// 	e.preventDefault();
-	// 	var input = document.forms[0].elements["input-val"];
-	// 	var inputVal = input.value;
-	// 	if(inputVal){
-	// 		CookieUtil.set("input",""+inputVal);
-	// 	}else{
-	// 		inputVal = CookieUtil.get("input");
-	// 	}
-	// 	inputVal = inputFilter(inputVal);
-	// 	inputVal.forEach(function(item){
-	// 		queueData.unshift(item);
-	// 	});
-		
-	// 	wrapRender();
-	// 	input.value = "";
-		
-	// }
-
+	
 	/**
 	    *函数名：id=input-val-tag 按钮绑定函数
 	    *参数：event
 	    *返回值：无
 	**/
 	function inputTagValue(e){
-		e.preventDefault();
+		
 		if(e.keyCode==13){
+			e.preventDefault();
 			var input = e.target;
 			if(input.id=="input-val-tag"){
 				var inputVal = input.value;
-				inputTagItem(inputVal);
-				if(queueDataTag.length>=10){
-					var num = queueData.length-9;
-					outputItem(num);
+				if(inputVal){
+					inputTagItem(inputVal);
+					if(queueDataTag.length>=10){
+						var num = queueDataTag.length-9;
+						outputItemTag(num);
+					}
 				}
+				
 			}
 			wrapRenderTag();
 		}
+	}
+	function inputHobbyValue(e){
+		
+		
+			e.preventDefault();
+			var input = document.getElementById("input-val-hobby");
+			
+			var inputVal = input.value;
+			if(inputVal){
+				inputHobbyItem(inputVal);
+				if(queueDataHobby.length>=10){
+					var num = queueDataHobby.length-9;
+					outputItemHobby(num);
+				}
+				
+				
+			}
+			wrapRenderHobby();
+		
 	}
 
 	/**
@@ -269,92 +276,109 @@
 			queueDataTag.push(item);//遍历入栈
 		});
 	}
+	function inputHobbyItem(input){
+
+		inputVal = inputFilter(input);//分隔
+		inputVal.forEach(function(item){
+			queueDataHobby.push(item);//遍历入栈
+		});
+	}
 
 	/**
 	    *函数名：函数出栈
 	    *参数：出栈条数
 	    *返回值：无
 	**/
-	function outputItem(num){
+	function outputItemTag(num){
 		for(var i = 0;i<num;i++){
 			queueDataTag = queueDataTag.shift();
 		}
 	}
+	function outputItemHobby(num){
+		for(var i = 0;i<num;i++){
+			queueDataHobby = queueDataHobby.shift();
+		}
+	}
+	
 
-	// function outputRight(e){
-	// 	e.preventDefault();
-		
-	// 	queueData.pop();
-	// 	wrapRender();
-		
-		
-	// }
-	// function searchVal(e){
-	// 	e.preventDefault();
-	// 	var randerWrap = document.getElementById("rander-wrap");
-		
-	// 	var searchVal = document.forms[0].elements['search'].value.trim();
-	// 	var child;
-	// 	if(searchVal&&randerWrap.children.length>0){
-	// 		randerWrap.innerHTML = randerWrap.innerHTML.replace(/(<span.*?>)|(<\/span>)/g,"");
-	// 		for(child=randerWrap.firstChild;child!=randerWrap.lastChild;child = child.nextElementSibling){
-				
-	// 			var srcStr = child.innerText;
-	// 			var srcArr = srcStr.split(searchVal);
-	// 			var lastStr = "";
-	// 			if(srcArr.length>1){
-	// 				lastStr = srcArr.join("<span class='item-show'>"+searchVal+"</span>");
-	// 				child.innerHTML =  lastStr;
-	// 			}
-	// 		}
-	// 	}
-	// 	document.forms[0].elements['search'].value = "";	
-		
-
-	// }
+	/**
+	    *函数名：鼠标移入删除按钮显示
+	    *参数：event
+	    *返回值：无
+	**/
 	function showDelete(e){
 		e.stopPropagation();
-		if(e.target.className=="item"&&(e.relatedTarget.className=="rander-wrap"||e.relatedTarget.className=="wrap")){
+		if((e.relatedTarget)&&e.target.className=="item"&&(e.relatedTarget.className=="rander-wrap"||e.relatedTarget.className=="wrap")){
 			var innerHTML = e.target.innerHTML;
 			innerHTML +="<img class='close-icon' src='img/close.png'>"
 			e.target.innerHTML = innerHTML;
 		}
 	}
+
+	/**
+	    *函数名：鼠标移出删除按钮消失
+	    *参数：event
+	    *返回值：无
+	**/
 	function hiddenDelete(e){
 		e.stopPropagation();
-		if(e.target.className=="item"&&(e.relatedTarget.className=="rander-wrap"||e.relatedTarget.className=="wrap")){
+		if((e.relatedTarget)&&e.target.className=="item"&&(e.relatedTarget.className=="rander-wrap"||e.relatedTarget.className=="wrap")){
 			var innerHTML = e.target.innerHTML;
 			innerHTML = innerHTML.replace(/<img.*?>/g,"") ;
 			e.target.innerHTML = innerHTML;
 		}
 	}
+
+	/**
+	    *函数名：删除按钮绑定事件
+	    *参数：event
+	    *返回值：无
+	**/
 	function deleteButton(e){
-		if(e.target.tagName=="img"){
+		if(e.target.tagName.toLowerCase()=="img"){
 			var targetReal = e.target;
 			while(targetReal.className!="item"){
 				targetReal = targetReal.parentNode;
 			}
+			var key = targetReal.childNodes[0].nodeValue;
+			var dataArr = targetReal.parentNode.id.split("-");
+			var dataName = dataArr[dataArr.length-1];
+			var changeArr = dataName.split("");
+			changeArr[0] = changeArr[0].toUpperCase();
+			dataName = "queueData"+changeArr.join("");
+			var data = eval(dataName);
+			var deleteKey = data.indexOf(key);
+			data = data.splice(deleteKey,1);
 			targetReal.parentNode.removeChild(targetReal);
+
 		}
 		
 	}
 
+	
 
 
 
-
-	// var srcContent = ["语文","数学","英语","物理","化学","生物"];
+	
 	function initData(){
 		var inputValTag = document.getElementById("input-val-tag");
-		var inputValHobby  = document.getElementById("input-val-hobby");
+		var confirmHobby  = document.getElementById("confirm-hobby");
 		var randerWrapHobby = document.getElementById("rander-wrap-hobby");
-		
+		var randerWrapTag = document.getElementById("rander-wrap-tag");
 		inputValTag.addEventListener("keydown",inputTagValue);
+		
+		confirmHobby.addEventListener("click",inputHobbyValue);
+		
+		randerWrapTag.addEventListener("mouseover",showDelete);
+		randerWrapTag.addEventListener("mouseout",hiddenDelete);
+		randerWrapTag.addEventListener("click",deleteButton);
 		randerWrapHobby.addEventListener("mouseover",showDelete);
 		randerWrapHobby.addEventListener("mouseout",hiddenDelete);
-		document.forms[1].elements["input-val-hobby"].value = "";
+		randerWrapHobby.addEventListener("click",deleteButton);
+		
 		
 		wrapRenderTag();
+		wrapRenderHobby();
 	}
 	initData();
 
