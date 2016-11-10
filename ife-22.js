@@ -26,9 +26,9 @@ function Tree(){
 		var random = parseInt(Math.random()*49+1);
 		var newNode = new Node(random);
 		if(this.root==null){
-			this.root = current;
+			this.root = newNode;
 		}else{
-			compareNum(this.root,newNode)
+			compareNum(this.root,newNode);
 		}
 
 	};
