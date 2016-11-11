@@ -10,26 +10,29 @@ var numArrReal = [];
 		numArr = numArr.splice(random,1);
 	}
 })
+
+	
+		
 function Node(data,left,right){
 	this.childLeft = left||null;
 	this.childRight = right||null;
 	this.data = data||null;
 }
-
-	
-		
 	
 }
 function Tree(){
 	this.root = null;
 	this.createNewTree = function(){
-		var random = parseInt(Math.random()*49+1);
-		var newNode = new Node(random);
-		if(this.root==null){
-			this.root = newNode;
-		}else{
-			compareNum(this.root,newNode);
+		for(var i = 0,len = numArrReal.length;i<len;i++){
+			var random = numArrReal[i];
+			var newNode = new Node(random);
+			if(this.root==null){
+				this.root = newNode;
+			}else{
+				compareNum(this.root,newNode);
+			}
 		}
+		
 
 	};
 	this.compareNum = function(parentNode,newNode){
