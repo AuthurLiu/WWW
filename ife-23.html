@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ife-23</title>
+	<style>
+	.show{
+		background: blue;
+	}
+	.treeItem{
+		border:1px solid #000;
+		display:flex;
+		/*float:left;*/
+		/*vertical-align: top;*/
+		justify-content:space-around;
+		
+		/*text-align: left;*/
+		height:85%;
+		/*font-size: 20%;*/
+		/*margin:0 5px;*/
+		padding:10px;
+		margin-right:5px;
+		margin-left:5px;
+	}
+	.clearfix:before,.clearfix:after{ 
+	    content:""; 
+	    display:table; 
+	} 
+	.clearfix:after{clear:both;} 
+	.clearfix{ 
+	    *zoom:1;/*IE/7/6*/
+	}
+	.treeRoot{
+		/*display:inline-block;*/
+		display:flex;
+		justify-content:space-around;
+		
+		border:1px solid #000;
+		padding:10px;
+		/*max-width:1200px;*/
+		height:200px;
+		/*float:left;*/
+		/*padding:24px;*/
+		/*padding:10px;*/
+	}
+	</style>
+</head>
+<body>
+	<div class="treeRoot">
+		Super
+		<div class="treeItem ">
+			Car
+			<div class="treeItem">
+				Apple
+				<div class="treeItem">Pear</div>
+				<div class="treeItem">Pig</div>
+				<div class="treeItem">Cola</div>
+				<div class="treeItem">Soccer</div>
+			</div>
+			<div class="treeItem">
+				Phone
+				<div class="treeItem">Book</div>
+				<div class="treeItem">School</div>
+			</div>
+		</div>
+		<div class="treeItem">
+			Note
+			<div class="treeItem">
+				Human
+				<div class="treeItem">Code</div>
+				<div class="treeItem">Operate</div>
+				<div class="treeItem">Man</div>
+			</div>
+			<div class="treeItem">
+				Program
+				<div class="treeItem">
+					Bement
+					<div class="treeItem">Cat</div>
+				</div>
+				<div class="treeItem">Glass</div>
+			</div>
+		</div>
+		<div class="treeItem">
+			Fish
+		</div>
+	</div>
+
+	<button id="depth-first">深度优先遍历</button>
+	<button id="breadth-first">广度优先遍历</button>
+	
+</body>
+</html>
+
+
+
+
