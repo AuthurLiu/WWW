@@ -1,11 +1,11 @@
 (function(){
 	function init(){
 		var preShowTree = document.getElementById("pre-show-tree");
-		preShowTree.addEventListener("click",preOrderTraverse);
+		preShowTree.addEventListener("click",preOrderShow);
 		var inShowTree = document.getElementById("in-show-tree");
-		inShowTree.addEventListener("click",inOrderTraverse);
+		inShowTree.addEventListener("click",inOrderShow);
 		var postShowTree = document.getElementById("post-show-tree");
-		postShowTree.addEventListener("click",postOrderTraverse);
+		postShowTree.addEventListener("click",postOrderShow);
 
 	}
 	var treeArr = [];
@@ -13,10 +13,41 @@
 		clearInterval(showQuene);
 		var count = 0;
 		var showQuene = setInterval(function(){
-			
-		});
+			if(treeArr[count-1]){
+				treeArr[count-1].className = treeArr[count-1].className.replace("show","");
+			}
+			if(treeArr[count]){
+				treeArr[count].className += " show";
+			}else if(typeof(treeArr[count])=="undefined"){
+				clearInterval(showQuene);
+			}
+			count++;
+		},1000);
 		
 	}
+	function preOrderShow(e){
+		e.preventDefault();
+		treeArr = [];
+		var root = document.getElementById("tree-bi-root");
+		preOrderTraverse(root);
+		rander();
+	}
+	function inOrderShow(e){
+		e.preventDefault();
+		treeArr = [];
+		var root = document.getElementById("tree-bi-root");
+		inOrderTraverse(root);
+		rander();
+	}
+	function postOrderShow(e){
+		e.preventDefault();
+		treeArr = [];
+		var root = document.getElementById("tree-bi-root");
+		postOrderTraverse(root);
+		rander();
+	}
+
+
 	// function preOrderTraverse(e){
 	// 	e.preventDefault();
 	// 	var preNode,currentNode =  document.getElementById("tree-bi-root");
@@ -50,9 +81,35 @@
 	// 		}
 	// 	},1000);
 	// }
-	function inOrderTraverse(){
-
+	function preOrderTraverse(currentNode){
+		treeArr.push(currentNode);
+		if(currentNode.firstElementChild){
+			preOrderTraverse(currentNode.firstElementChild);
+		}
+		if(currentNode.lastElementChild){
+			preOrderTraverse(currentNode.lastElementChild);
+		}
 	}
+	function inOrderTraverse(currentNode){
+		if(currentNode.firstElementChild){
+			inOrderTraverse(currentNode.firstElementChild);
+		}
+		treeArr.push(currentNode);
+		if(currentNode.lastElementChild){
+			inOrderTraverse(currentNode.lastElementChild);
+		}
+	}
+	function postOrderTraverse(currentNode){
+		
+		if(currentNode.firstElementChild){
+			postOrderTraverse(currentNode.firstElementChild);
+		}
+		if(currentNode.lastElementChild){
+			postOrderTraverse(currentNode.lastElementChild);
+		}
+		treeArr.push(currentNode);
+	}
+
 	
 	
 	init();
