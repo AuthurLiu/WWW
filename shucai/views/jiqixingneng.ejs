@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  	<% include nav %>
+    <div class="description-group">
+    	<div class="time left"></div>
+    	<table class="description">
+    		<tr>
+    			<td></td>
+    			<td></td>
+    			<td></td>
+    		</tr>
+    		<tr>
+    			<td></td>
+    			<td></td>
+    			<td></td>
+    		</tr>
+    	</table>
+    </div>
+    <div class="main-group">
+    	<h1><%= title %></h1>
+    	<div>机器名：<span class="machine-name"></span></div>
+    	<div>机器状态：<span class="machine-status"></span></div>
+		<div>生产状态：<span class="running-status"></span></div>
+		<div class="product-time left">
+			<h2>时间（总计）</h2>
+			<div class="row">
+				<div class="title">断电时间：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">预备时间：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">内部停机时间：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">外部停机时间：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">运行时间：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">生产时间：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">等待时间：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">最大运行时间：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">平均运行时间：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+		</div>
+		<div class="production right">
+			<h2>时间（总计）</h2>
+			<div class="row">
+				<div class="title">理论产量：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">实际产量：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">剔除量：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">丢失量：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				
+			</div>
+			<div class="row">
+				<div class="title">折合：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				
+			</div>
+			<div class="row">
+				<div class="title">正常生产速度（包/分）：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">停机次数：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+		</div>
+		<div class="effective-rate left">
+			<h2></h2>
+		</div>
+		<div class="utilizable-ratio right">
+			<h2></h2>
+		</div>
+
+
+
+
+    </div>
+  </body>
+</html>
