@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 
 var index = require('./routes/index');
-
+var dataInformation = require("./routes/dataInformation.js")
 var app = express();
 
 // view engine setup
@@ -23,7 +23,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-
+app.use("/dataInformation",dataInformation);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -42,5 +42,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-
+app.listen(8000);
 module.exports = app;
