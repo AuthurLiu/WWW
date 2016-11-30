@@ -16,11 +16,12 @@ User.prototype = {
 	getData : function(dataList,callback){
 		var that = this;
 		pool.getConnection(function(err,connection){
-			connection.query("select * from datainformation",function(err,result){
+			connection.query("select * from ?? ;",['datainformation'],function(err,result){
 				// console.log("模块内错误"+err);
-				// this.data = 1;
+				// that.data = 1;
 				console.log("内部调用");
-				console.log(that.data);
+				// console.log(that.data);
+				console.log(err);
 				console.log("————————————————————————————");
 				// if(tendData instanceof Array){
 				// 	console.log("this is a array");
@@ -29,7 +30,7 @@ User.prototype = {
 				// console.log(tendData);
 				// console.log("模块内输出");
 				// console.log(result);
-				// callback(result);
+				callback(result[0].MachineName);
 			});
 		});
 	},

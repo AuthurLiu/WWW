@@ -6,6 +6,30 @@
   </head>
   <body>
   	<% include nav %>
-    
+    <button id = "request-test">测试</button>
+    <div id="hello">
+    	
+    </div>
+    <script>
+    function init(){
+    	var requestTest = document.getElementById("request-test");
+    	requestTest.addEventListener("click",requestHello);
+    }
+    function requestHello(event){
+    	event.preventDefault();
+    	var xhr = new XMLHttpRequest();
+    	xhr.onreadystatechange = function(){
+    		if(xhr.readyState == 4){
+    			if((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304){
+    				var helloWrap = document.getElementById("hello");
+    				helloWrap.innerHTML = xhr.responseText;
+    			}
+    		}
+    	};
+    	xhr.open("get", "/test", true);
+    	xhr.send(null);
+    }
+    init();
+    </script>
   </body>
 </html>
