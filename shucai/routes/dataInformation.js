@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mysql = require('../model/mysql');
-var myUser = new mysql.User(2);
+var myUser = new mysql();
 
 
 /* GET home page. */

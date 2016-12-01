@@ -7,6 +7,7 @@
   <body>
   	<% include nav %>
     <button id = "request-test">测试</button>
+    <a href="/test">跳转</a>
     <div id="hello">
     	
     </div>
@@ -24,9 +25,10 @@
     				var helloWrap = document.getElementById("hello");
     				helloWrap.innerHTML = xhr.responseText;
     			}
-    		}
+    		} 
     	};
-    	xhr.open("get", "/test", true);
+    	xhr.open("get", "http://localhost:8000/test", true);
+        xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
     	xhr.send(null);
     }
     init();

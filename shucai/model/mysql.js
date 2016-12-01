@@ -7,22 +7,25 @@ var pool = mysql.createPool({
 	database : "test"
 });
 
-function User(data){
-	this.data  = data;
+function User(dataList){
+	this.dataList  = dataList;
 }
 
 User.prototype = {
 	constructor : User,
-	getData : function(dataList,callback){
+	getData : function(callback){
 		var that = this;
+console.log(that.dataList);
 		pool.getConnection(function(err,connection){
-			connection.query("select * from ?? ;",['datainformation'],function(err,result){
-				// console.log("模块内错误"+err);
+			console.log(that.dataList);
+			connection.query("select * from ?? ;",[that.dataList],function(err,result){
+
+				
 				// that.data = 1;
-				console.log("内部调用");
-				// console.log(that.data);
-				console.log(err);
-				console.log("————————————————————————————");
+				// console.log("内部调用");
+				// // console.log(that.data);
+				// console.log(err);
+				// console.log("————————————————————————————");
 				// if(tendData instanceof Array){
 				// 	console.log("this is a array");
 				// }
@@ -36,5 +39,5 @@ User.prototype = {
 	},
 };
 
-module.exports.User = User;
+module.exports = User;
 
