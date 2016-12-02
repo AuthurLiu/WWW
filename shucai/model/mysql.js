@@ -1,7 +1,7 @@
 var mysql = require("mysql");
 
 var pool = mysql.createPool({
-	host : "192.168.43.52",
+	host : "localhost",
 	user : "root",
 	password : "root",
 	database : "test"
@@ -15,9 +15,9 @@ User.prototype = {
 	constructor : User,
 	getData : function(callback){
 		var that = this;
-console.log(that.dataList);
+// console.log(that.dataList);
 		pool.getConnection(function(err,connection){
-			console.log(that.dataList);
+			// console.log(that.dataList);
 			connection.query("select * from ?? ;",[that.dataList],function(err,result){
 
 				
@@ -33,7 +33,7 @@ console.log(that.dataList);
 				// console.log(tendData);
 				// console.log("模块内输出");
 				// console.log(result);
-				callback(result[0].MachineName);
+				callback(result);
 			});
 		});
 	},
