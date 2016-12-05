@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header"  data-position="fixed">
+        <h2>header</h2>
+    </div>
+    <div data-role="content">
+        各种元素可以扮演按钮的角色
+
+        <a href="#" data-role="button">a链接按钮</a>
+        <input type="button" value="input下的button按钮"/>
+        <input type="submit" value="input下的submit按钮"/>
+        <input type="reset" value="input下的reset按钮"/>
+        <button>button按钮</button>
+
+        <!--覆盖按钮的默认设置-->
+
+        data-corners="false"改变边角
+        <a data-role="button" href="#">button1</a>
+        <a data-role="button" data-corners="false" href="#">button2</a>
+
+
+        data-shadow="false"移除阴影
+        <a data-role="button" href="#">button1</a>
+        <a data-role="button" data-corners="false" href="#">button2</a>
+        <a data-role="button" data-corners="false" data-shadow="false" href="#">button2</a>
+
+        data-inline="true"改变按钮的大小一行
+        <!--一个按钮上加了data-inline="true"后可以让按钮按自己的大小显示，如果相邻的两个按钮都加了data-inline="true"，那么这两个按钮就会排在-->
+        <a data-role="button" href="#">button1</a>
+        <a data-role="button" data-inline="true" href="#">button2</a>
+        <a data-role="button"  data-inline="true" href="#">button2</a>
+        <br/>
+
+        按钮上添加图标
+        <!--data-iconpos="top"控制图标所在的位置-->
+        <a href="#" data-role="button" data-icon="home">button</a>
+        <a href="#" data-role="button" data-iconpos="top" data-icon="home">button</a>
+        <a href="#" data-role="button" data-iconpos="right" data-icon="home">button</a>
+        <a href="#" data-role="button" data-iconpos="bottom" data-icon="home">button</a>
+        <a href="#" data-role="button" data-iconpos="notext" data-icon="home">button</a>
+
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <h2>footer</h2>
+    </div>
+</div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

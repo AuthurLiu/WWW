@@ -1,0 +1,60 @@
+<!DOCTYPE html>     
+<html>     
+<head>     
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+
+</head>               
+<body>
+	<div data-role="page" data-theme="c">
+    	<div data-role="panel" id="mypanel1" data-theme="a">
+        	<h1>向右滑动屏幕</h1>
+            <p>我是面板1</p>
+		</div>
+		<div data-role="panel" id="mypanel2" data-theme="a" data-position="right">
+        	<h1>向左滑动屏幕</h1>
+            <p>我是面板2</p>
+
+        </div>
+        <div data-role="content">
+        	<h1>请尝试这对屏幕做些什么</h1>
+        </div>
+	</div>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script>
+//        声明一个面板
+        $( "#mypanel1" ).trigger( "updatelayout" );
+        $( "#mypanel2" ).trigger( "updatelayout" );
+    </script>
+
+    <script type="text/javascript">
+//        监听向右滑动事件
+        $(document).ready(function(){
+            $("div").bind("swiperight", function(event) {
+//                向右滑动后显示面板
+                $( "#mypanel1" ).panel( "open" );
+            });
+        });
+        $(document).ready(function(){
+            $("div").bind("swipeleft", function(event) {
+                $( "#mypanel2" ).panel( "open" );
+            });
+        });
+//        监听被点击事件
+        $(document).ready(function(){
+            $("div").bind("tap", function(event) {
+                alert("屏幕被单击了");
+            });
+        });
+//        监听屏幕被长按事件
+        $(document).ready(function(){
+            $("div").bind("taphold", function(event) {
+                alert("屏幕被长按");
+            });
+        });
+    </script>
+</body>
+</html>

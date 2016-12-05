@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>\
+    <style>
+
+    </style>
+</head>
+<body>
+    <div data-role="page" id="page1" >
+        <div data-role="header">
+            <h2>list</h2>
+        </div>
+        <div data-role="content">
+            <!--最普通的列表-->
+            <ul data-role="listview">
+                <li>我是一个列表项</li>
+                <li>我是另一个列表项</li>
+                <li>我是另一个列表项</li>
+                <!--data-role="list-divider"列表之间的分界线-->
+                <li data-role="list-divider">我是另一个列表项</li>
+                <li>我是另一个列表项</li>
+                <li>我是另一个列表项</li>
+            </ul>
+            <br/>
+            <br/>
+
+            <!--嵌入型列表 data-inset="true-->
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">我是一个列表项</li>
+                <li>我是另一个列表项</li>
+                <li>我是另一个列表项</li>
+                <li>我是另一个列表项</li>
+                <li>我是另一个列表项</li>
+            </ul>
+
+
+            <!--使用有编号的列表-->
+            <ol data-role="listview" data-inset="true">
+                <li data-role="list-divider">我是一个列表项</li>
+               <li><a href="#">我是另一个列表项</a></li>   <!-- 加了a标签后样式多了一个向右的小箭头-->
+                <li>我是另一个列表项</li>
+                <li>我是另一个列表项</li>
+                <li>我是另一个列表项</li>
+            </ol>
+
+            <!--添加计数器-->
+            <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">我是一个列表项</li>
+                <li><a href="#">我是另一个列表项</a><span class="ui-li-count">12</span></li>
+                <li>我是另一个列表项 <span class="ui-li-count">3</span></li>
+                <li>我是另一个列表项</li>
+                <li>我是另一个列表项</li>
+            </ul>
+            <br/>
+            <br/>
+            <br/>
+            <!--添加缩略图-->
+            <ul data-role="listview">
+                <li><a href="#"><img src="images/1.jpg" alt=""/>pic2</a></li>
+                <li><a href="#"><img src="images/1.jpg" alt=""/>pic2</a></li>
+            </ul>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            <!--拆分列表-->
+            <!--一个列表中出现了两个链接就会变为拆分列表-->
+            <!--data-split-theme="b"第二个链接中使用的图标的颜色-->
+
+            <ul data-role="listview" data-split-theme="b">
+                <li>
+                    <a href="#">
+                        <h2>我是标题</h2>
+                        <p>我是内容</p>
+                    </a>
+                    <a href="#">我是第二个链接的内容</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/1.jpg" alt=""/>
+                        <h2>我是标题</h2>
+                        <p>我是内容</p>
+                    </a>
+                    <a href="#">我是第二个链接的内容</a>
+                </li>
+            </ul>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            <!--搜索列表内容-->
+            <ul data-role="listview" data-filter="true" data-filter-placeholder="zhangsan" data-inset="true">
+                <li data-role="list-divider">ad sad ksd as </li>
+                <li>ad sad ksd as </li>
+                <li>ad sad ksd as </li>
+                <li>ad sad ksd as </li>
+                <li>ad sad ksd as </li>
+                <li>ad sad ksd as </li>
+                <li>ad sad ksd as </li>
+            </ul>
+
+
+
+        </div>
+    </div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

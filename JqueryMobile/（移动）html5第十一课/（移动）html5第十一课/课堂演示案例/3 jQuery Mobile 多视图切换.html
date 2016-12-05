@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>\
+    <style>
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div data-role="page" id="page1" >
+        <div data-role="header">
+            <h2>我是头部</h2>
+        </div>
+        <div data-role="content">
+            <!--data-transition="pop""    多视图切换动画效果-->
+            <a href="#page2" data-transition="pop" >到第二个页面</a>
+            <p>供观赏的自然风光、景物，包括自然景观和人文景观。是由光对物的反映所显露出来的一种景象。犹言风光或景物、景色等，涵意至为广泛</p>
+            <img src="images/1.jpg" alt=""/>
+        </div>
+        <div data-role="footer">
+            <h2>我是尾部</h2>
+        </div>
+    </div>
+
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h2>我是头部2</h2>
+        </div>
+        <div data-role="content">
+            <a href="#page1" data-transition="slideup" >到第一个页面</a>
+            <p>供观赏的自然风光。是由光对物的反映所显露出来的一种景象。犹言风光或景物、景色等，涵意至为广泛 </p>
+            <img src="images/2.jpg" alt=""/>
+        </div>
+        <div data-role="footer">
+            <h2>我是尾部</h2>
+        </div>
+    </div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

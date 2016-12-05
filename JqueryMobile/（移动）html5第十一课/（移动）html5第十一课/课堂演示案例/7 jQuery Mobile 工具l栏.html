@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>\
+    <style>
+
+    </style>
+</head>
+<body>
+    <div data-role="page" data-title="one page" >
+
+        <!--data-position="fixed" 让头部固定-->
+        <!--data-fullscreen="true" 可以吧头尾导航全部隐藏，出现内容全屏-->
+        <div data-role="header" data-position="fixed" >
+            <a href="#">返回</a>
+            <h2>我是头部</h2>
+            <a href="#">打开</a>
+        </div>
+        <div data-role="content">
+         <h2>我是内容</h2>
+         <h2>我是内容</h2>
+         <h2>我是内容</h2>
+         <h2>我是内容</h2>
+
+        </div>
+        <div data-role="footer" data-position="fixed" data-theme="b"  data-fullscreen="true">
+            <!--data-role="navbar  把列表变为导航栏"-->
+            <!--导航分栏一行最多可以分5栏，建议最好不要分那么栏，因为在一些小的手机上无法完全显示
+            如果分栏大于5栏，导航栏将自动分为两行-->
+            <div data-role="navbar" >
+                <ul>
+                    <li><a href="#" data-icon="home">主页</a></li>
+                    <li><a href="#" data-icon="info">信息</a></li>
+                    <li><a href="#" data-icon="search">搜索</a></li>
+                    <li><a href="#" data-icon="back">返回</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script>
+        $("#mypanel").trigger("updatelayout")
+    </script>
+</body>
+</html>

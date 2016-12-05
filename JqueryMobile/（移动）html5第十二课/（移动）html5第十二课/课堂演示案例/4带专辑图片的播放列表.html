@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>\
+    <style>
+
+    </style>
+</head>
+<body>
+    <div data-role="page" id="page1" >
+        <div data-role="header" data-theme="b" data-position="fixed" >
+            <a href="#">返回</a>
+            <h2>播放列表</h2>
+            <a href="#">设置</a>
+        </div>
+        <div data-role="content">
+         <ul data-role="listview">
+            <li>
+                <a href="#">
+                    <img src="images/img1.jpg" alt=""/>
+                    <h2>在希望的田野上 </h2>
+                    <p>彭丽媛</p>
+                </a>
+                <a href="#cbox" data-rel="popup" data-position-to="window" data-transition="pop"></a>
+            </li>
+             <li>
+                 <a href="#">
+                     <img src="images/img2.jpg" alt=""/>
+                     <h2>甜蜜蜜 </h2>
+                     <p>邓丽君</p>
+                 </a>
+             </li>
+             <li>
+                 <a href="#">
+                     <img src="images/img3.jpg" alt=""/>
+                     <h2>在那桃花盛开的地方 </h2>
+                     <p>蒋大为</p>
+                 </a>
+             </li>
+             <li>
+                 <a href="#">
+                     <img src="images/img4.jpg" alt=""/>
+                     <h2>在希望的田野上 </h2>
+                     <p>刘媛媛</p>
+                 </a>
+             </li>
+             <li>
+                 <a href="#">
+                     <img src="images/img5.jpg" alt=""/>
+                     <h2>小背篓 </h2>
+                     <p>宋祖英</p>
+                 </a>
+             </li>
+         </ul>
+
+            <!--链接页面指向的地方-->
+            <div data-role="popup" id="cbox" data-theme="b" class="ui-content" style="max-width: 340px;">
+                <h3>是否加入播放列表</h3>
+                <a href="#" data-role="button" data-rel="back" data-theme="b" data-inline="true" data-mini="true">加入播放列表</a>
+                <a href="#" data-role="button" data-rel="back"  data-inline="true" data-mini="true">算了吧</a>
+
+            </div>
+        </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+            <div data-role="navbar">
+                <ul >
+                    <li><a href="#">我的音乐</a></li>
+                    <li><a href="#">在线曲库</a></li>
+                    <li><a href="#">下载管理</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>

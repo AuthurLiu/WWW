@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test1</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+</head>
+<body>
+	<div data-role="page" >
+		<div data-role="header" data-position = "fixed"><h2>头部</h2></div>
+		<div data-role="content">
+			<a href="#page2" data-role = "button" data-inline="true" >跳转</a>
+
+		</div>
+		<div data-role="footer" data-position = "fixed">
+			<div data-role="navbar">
+				<ul data-role = "listview">
+					<li><a href="" data-icon="home" data-iconpos="notext" ></a> </li>
+					<li><a href="" data-icon="star" data-iconpos="notext"></a></li>
+					<li><a href="" data-icon="search" data-iconpos="notext"></a></li>
+					<li><a href="" data-icon="back" data-iconpos="notext" data-theme="b"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="page2">
+		<div data-role="header" data-position="fixed"><h2>头部</h2></div>
+		<div data-role="content">
+			
+				
+				<div data-role="controlgroup">
+					<a href="#page3" data-role="button"  data-transition="pop">返回弹出</a>
+			
+				
+					<a href="#" data-role="button" data-rel="back">返回</a>
+				</div>
+					<a href="#page3" data-role="button"  data-transition="pop">返回弹出</a>
+			
+				
+					<a href="#" data-role="button" data-rel="back">返回</a>
+				
+			</div>
+			<div data-role="collapsible"  data-collapsed="false">
+				<h2>标题</h2>
+				<p>内容</p>
+			</div>
+		</div>
+		<div data-role="footer" data-position = "fixed">
+			<div data-role="navbar">
+				<ul data-role = "listview">
+					<li><a href="" data-icon="home" data-iconpos="notext" ></a> </li>
+					<li><a href="" data-icon="star" data-iconpos="notext"></a></li>
+					<li><a href="" data-icon="search" data-iconpos="notext"></a></li>
+					<li><a href="" data-icon="back" data-iconpos="notext" data-theme="b"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="page" id="page3">
+			<form action="">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<div data-role="controlgroup"  data-type="horizontal" >
+							<label for="name1">男</label>
+							<input type="radio" name="sex" id="name1">
+							<label for="name2">女</label>
+							<input type="radio" name="sex" id="name2">
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<select name="" id="">
+							<option value="1">1</option>
+							<option value="2">2</option>
+						</select>
+					</div>
+					
+						
+					
+				
+				</div>
+				<input type="range" name="area" value="10" min="0" max"50">
+				
+				
+				
+			</form>
+			<ul data-role="listview">
+				<li data-role="list-divider">aaaaaaaaaa</li>
+				<li><a href="">aaaaaaaa</a> </li>
+				<li><a href="">aaaaaaaa</a> <span class="ui-li-count">4</span></li>
+				<li>asdfadf</li>
+			</ul>
+				
+			
+		</div>
+	</div>
+
+	
+<script src="./js/jquery-1.10.2.min.js"></script>
+<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>
