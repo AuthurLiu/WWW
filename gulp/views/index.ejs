@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  	<% include nav %>
+    <button id = "request-test">测试</button>
+    <a href="/test">跳转</a>
+    <div id="hello">
+    	asdgasdfasdasdg
+    </div>
+    <script>
+    function init(){
+    	var requestTest = document.getElementById("request-test");
+    	requestTest.addEventListener("click",requestHello);
+    }
+    function requestHello(event){
+    	event.preventDefault();
+    	var xhr = new XMLHttpRequest();
+    	xhr.onreadystatechange = function(){
+    		if(xhr.readyState == 4){
+    			if((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304){
+    				var helloWrap = document.getElementById("hello");
+    				helloWrap.innerHTML = xhr.responseText;
+    			}
+    		} 
+    	};
+    	xhr.open("get", "http://localhost:8000/test", true);
+        xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+    	xhr.send(null);
+    }
+    init();
+    </script>
+  </body>
+</html>

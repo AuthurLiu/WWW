@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+    table {
+    	font-family: verdana,arial,sans-serif;
+    	font-size:11px;
+    	color:#333333;
+    	border-width: 1px;
+    	border-color: #999999;
+    	border-collapse: collapse;
+    }
+    table th {
+    	background:#b5cfd2 ;
+    	border-width: 1px;
+    	padding: 8px;
+    	border-style: solid;
+    	border-color: #999999;
+    }
+    table td {
+    	background:#dcddc0 ;
+    	border-width: 1px;
+    	padding: 8px;
+    	border-style: solid;
+    	border-color: #999999;
+    }
+	.left{
+		float:left;
+	}
+	.right{
+		float:right;
+	}
+	.value,.title{
+		display: inline-block;
+	}
+	.main-group,.description-group{
+		width:1200px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+    </style>
+  </head>
+  <body>
+  	
+
+  	
+    <div class="description-group">
+    	<div class="time left">
+    		
+    	</div>
+    	<table class="description">
+    		<tr>
+    			<td rowspan="2">
+    				<div id="time"><%=srcDataShow.NowTime%></div>
+    				<div id="week"><%=srcDataShow.NowWeek%></div>
+    				<div class="date"><%=srcDataShow.NowDate%></div>
+    			</td>
+    			<td>班次：<span id="classNo"><%=srcDataShow.ClassNo%></span></td>
+    			<td>开始：<span class="date"><%=srcDataShow.NowDate%></span> 12：00</td>
+    			<td>结束：<span class="date"><%=srcDataShow.NowDate%></span> 18：00</td>
+    			<td>班次时间：6：00</td>
+    		</tr>
+    		<tr>
+    			<td colspan="2">商标：<span id="brand"><%=srcDataShow.Brand%></span></td>
+    			<td>机组编号：<span id="Cnt"><%=srcDataShow.Cnt%></span></td>
+    			<td>已过时间：<span id="passTime"><%=srcDataShow.PassTime%></span></td>
+    		</tr>
+    	</table>
+    </div>
+    <div class="main-group">
+    	<h1><%= title %></h1>
+    	<div>机器名：<span class="machine-name"><%= srcDataShow.MachineName %></span></div>
+    	<div>机器状态：<span class="machine-status"></span></div>
+		<div>生产状态：<span class="running-status"></span></div>
+		<div class="product-time left">
+			<h2>时间（总计）</h2>
+			<div class="row">
+				<div class="title">断电时间：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.PowerOffTimer %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">预备时间：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.PrepareTimer %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">内部停机时间：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.InternalTimer %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">外部停机时间：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.ExiternalTimer %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">运行时间：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.RunningTimer %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">生产时间：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.ProductTimer %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">等待时间：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.WaittingTimer %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">最大运行时间：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.MaxRunningTimer %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">平均运行时间：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.AvgRunningTimer %></div>
+				<div class="value-percent"></div>
+			</div>
+		</div>
+		<div class="production right">
+			<h2>时间（总计）</h2>
+			<div class="row">
+				<div class="title">理论产量：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.TheoreticalProduct %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">实际产量：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.RealProduct %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">剔除量：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.RejectProduct %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">丢失量：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.MissedProduct %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				
+			</div>
+			<div class="row">
+				<div class="title">折合：-------------------------------------------------------</div>
+				<div class="value"></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				
+			</div>
+			<div class="row">
+				<div class="title">正常生产速度（包/分）：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.NominalSpeed %></div>
+				<div class="value-percent"></div>
+			</div>
+			<div class="row">
+				<div class="title">停机次数：-------------------------------------------------------</div>
+				<div class="value"><%= srcDataShow.StopNumber %></div>
+				<div class="value-percent"></div>
+			</div>
+		</div>
+		<div class="effective-rate left">
+			<h2></h2>
+		</div>
+		<div class="utilizable-ratio right">
+			<h2></h2>
+		</div>
+
+
+
+
+    </div>
+  </body>
+</html>
