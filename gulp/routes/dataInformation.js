@@ -47,7 +47,7 @@ function filterData(srcData){
 
 		}
 	}
-	var tranArr = srcData.ShiftNo.match(/(\d+\-\d+\-\d+).*(\d)/)
+	var tranArr = srcData.ShiftNo.match(/(\d+\-\d+\-\d+).*(\d)/);
 	srcData.ClassNo = tranArr[2];
 	srcData.NowDate = tranArr[1];
 
@@ -67,18 +67,28 @@ function filterData(srcData){
 //初始化机器性能页面数据
 router.get('/', function(req, res) {
 	var srcData;
-	myUser.getData(function(result){
-		// console.log(result);
-		srcData = result[1];
-		filterData(srcData);
-		// console.log(srcData);
-		// res.send(srcData);
-		
-		console.log(srcData.PassTime);
-		res.render('dataInformation', {
-			title: '机器性能',srcDataShow:srcData
+	console.log(req.xhr);
+	if(req.xhr){
+		myUser.getData(function(result){
+			console.log("异步");
+			srcData = result[1];
+			filterData(srcData);
+			res.set('Content-Type', 'application/json');
+			
+			res.send(srcData);
+			res.end();
+			
 		});
-	});
+	}else{
+		myUser.getData(function(result){
+			srcData = result[1];
+			filterData(srcData);
+			res.render('dataInformation', {
+				title: '机器性能',srcDataShow:srcData
+			});
+		});
+	}
+	
 
 });
 
