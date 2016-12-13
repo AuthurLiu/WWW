@@ -3,36 +3,42 @@ namespace Home\Controller;
 use Think\Controller;
 class LoginController extends Controller {
     public function index(){
-    	$this->display();
+        $this->display();
     }
     public function login(){
-    	// if(!IS_POST){
-    	// 	E('页面不存在');
-    	// }
-    	// if(I('code','','md5')!=session('verify')){
-    	// 	$this->error('验证码错误');
-    	$code = I('code');
-    	// }
-    	$username = I('username');
-    	$password = I('password','','md5');
-    	printf($code);
-    	printf("\n-------------------");
-    	printf(session('verify_code'));
-    	die;
-    	$user = M('hd_user')->where(array('username'=>$username))->find();
-    	var_dump($user);
-    	die;
-    	if(!$user||$user['password']!=$password){
-    		$this->error('账号或密码错误');
-    	}
-    	if($user['lock']){
-    		$this->error('用户被锁定');
-    	}
-    	$data = array(
-    		'id'=>$user['id'],
-    		'logintime'=>time(),	
-    		'loginip'=> get_client_ip()
-    		);
+        if(!IS_POST){
+            E('页面不存在');
+        }
+        $code = I('code');
+        $verify = new \Think\Verify();
+        $result = $verify->check($code);
+        if(!$result){
+            $this->error('验证码错误');
+           
+        }
+        $username = I('username');
+        $password = I('password','','md5');
+        
+       
+        $user = M('hd_user')->where(array('username'=>$username))->find();
+        if(!$user||$user['password']!=$password){
+            $this->error('账号或密码错误');
+        }
+        if($user['lock']){
+            $this->error('用户被锁定');
+        }
+        $data = array(
+            'id'=>$user['id'],
+            'logintime'=>time(),    
+            'loginip'=> get_client_ip()
+            );
+         M('hd_user')->save($data);
+        session('username',$username);
+        session('uid',$id);
+        session('logintime',date('y-m-d H:i:s',$user['logintime']));
+        session('loginip',$user['loginip']);
+
+        $this->redirect('Index/index');
 
     }
     public function verify(){

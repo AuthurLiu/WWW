@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<script type="text/javascript" src="__PUBLIC__/Js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Js/index.js"></script>
-<link rel="stylesheet" href="__PUBLIC__/Css/public.css" />
-<link rel="stylesheet" href="__PUBLIC__/Css/index.css" />
+<script type="text/javascript" src="/js/hyc_admin/Public/Js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/js/hyc_admin/Public/Js/index.js"></script>
+<link rel="stylesheet" href="/js/hyc_admin/Public/Css/public.css" />
+<link rel="stylesheet" href="/js/hyc_admin/Public/Css/index.css" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <base target="iframe"/>
 <head>
@@ -18,7 +18,7 @@
 			<a href="#">选择按钮</a>
 		</div>
 		<div class="exit">
-			<span>欢迎回来，{$username}</span>
+			<span>欢迎回来，<?php echo ($username); ?></span>
 			<a href="#" target="_self">退出</a>
 			<a href="http://bbs.houdunwang.com" target="_blank">获得帮助</a>
 			<a href="http://www.houdunwang.com" target="_blank">后盾网</a>
