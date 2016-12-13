@@ -19,7 +19,7 @@
 		</div>
 		<div class="exit">
 			<span>欢迎回来，<?php echo ($username); ?></span>
-			<a href="#" target="_self">退出</a>
+			<a href="<?php echo U('Index/logout');?>" target="_self">退出</a>
 			<a href="http://bbs.houdunwang.com" target="_blank">获得帮助</a>
 			<a href="http://www.houdunwang.com" target="_blank">后盾网</a>
 		</div>

@@ -20,7 +20,7 @@ class LoginController extends Controller {
         $password = I('password','','md5');
         
        
-        $user = M('hd_user')->where(array('username'=>$username))->find();
+        $user = M('user')->where(array('username'=>$username))->find();
         if(!$user||$user['password']!=$password){
             $this->error('账号或密码错误');
         }
@@ -32,9 +32,9 @@ class LoginController extends Controller {
             'logintime'=>time(),    
             'loginip'=> get_client_ip()
             );
-         M('hd_user')->save($data);
+         M('user')->save($data);
         session('username',$username);
-        session('uid',$id);
+        session('uid',$user['id']);
         session('logintime',date('y-m-d H:i:s',$user['logintime']));
         session('loginip',$user['loginip']);
 
