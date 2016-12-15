@@ -27,7 +27,7 @@
 	<div id="left">
 		<dl>
 			<dt>功能标题</dt>
-			<dd><a href="#">功能标题</a></dd>
+			<dd><a href="#">添加用户</a></dd>
 			<dd><a href="#">功能标题</a></dd>
 			<dd><a href="#">功能标题</a></dd>
 			<dd><a href="#">功能标题</a></dd>
