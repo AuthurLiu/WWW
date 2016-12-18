@@ -1,0 +1,1036 @@
+[ 2016-12-17T14:25:05+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0172s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001805s ]
+
+[ 2016-12-17T14:27:33+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0056s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001511s ]
+
+[ 2016-12-17T14:27:36+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001842s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001740s ]
+
+[ 2016-12-17T14:29:01+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0147s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2016-12-17T14:29:23+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001203s ]
+
+[ 2016-12-17T14:42:50+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0123s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000439s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001847s ]
+
+[ 2016-12-17T14:43:27+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0158s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001629s ]
+
+[ 2016-12-17T14:44:36+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0193s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000967s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001173s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001259s ]
+
+[ 2016-12-17T14:47:06+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0145s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001697s ]
+
+[ 2016-12-17T14:47:46+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0182s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001580s ]
+
+[ 2016-12-17T14:48:19+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0209s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002342s ]
+
+[ 2016-12-17T14:48:44+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0175s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2016-12-17T14:48:58+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2016-12-17T14:49:15+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000778s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0161s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002726s ]
+
+[ 2016-12-17T14:49:39+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0078s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2016-12-17T14:50:24+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001915s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0177s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002566s ]
+
+[ 2016-12-17T14:53:14+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0141s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001323s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001614s ]
+
+[ 2016-12-17T14:53:36+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001482s ]
+
+[ 2016-12-17T14:54:26+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0193s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021736s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001231s ]
+
+[ 2016-12-17T14:54:55+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 45 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001652s ]
+
+[ 2016-12-17T14:55:43+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000657s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0173s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001072s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001550s ]
+
+[ 2016-12-17T14:56:01+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0148s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002238s ]
+
+[ 2016-12-17T14:56:35+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000882s ]
+
+[ 2016-12-17T15:06:50+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0169s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001778s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001927s ]
+
+[ 2016-12-17T15:07:38+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0069s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2016-12-17T15:08:35+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0087s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002032s ]
+
+[ 2016-12-17T19:21:51+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000633s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0179s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001754s ]
+
+[ 2016-12-17T19:22:11+08:00 ] ::1 /js/hyc_admin/index.php/Index/addNode.html?name=jk&title=jk%E6%A8%A1%E5%9D%97&status=1&pid=undefined&level=NaN
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0048s ]
+SQL: INSERT INTO `think_node` (`name`,`title`,`status`,`pid`,`level`) VALUES ('jk','jk模块','1','0','0') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_node` WHERE `name` = 'jk' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-12-17T19:24:43+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001186s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0193s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000233s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002439s ]
+
+[ 2016-12-17T19:25:00+08:00 ] ::1 /js/hyc_admin/index.php/Index/addNode.html?name=ki&title=ki%E6%A8%A1%E5%9D%97&status=1&pid=undefined&level=NaN
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0077s ]
+SQL: INSERT INTO `think_node` (`name`,`title`,`status`,`pid`,`level`) VALUES ('ki','ki模块','1','0','0') [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_node` WHERE `name` = 'ki' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2016-12-17T19:25:31+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0127s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000183s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001930s ]
+
+[ 2016-12-17T19:25:45+08:00 ] ::1 /js/hyc_admin/index.php/Index/addNode.html?name=lo&title=%E5%92%AF%E6%A8%A1%E5%9D%97&status=1&pid=undefined&level=NaN
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001901s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0047s ]
+SQL: INSERT INTO `think_node` (`name`,`title`,`status`,`pid`,`level`) VALUES ('lo','咯模块','1','0','0') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `think_node` WHERE `name` = 'lo' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-12-17T19:28:07+08:00 ] ::1 /js/hyc_admin/index.php/Index/addNode.html?name=loj&title=%E5%92%AF%E6%A8%A1%E5%9D%97&status=1&pid=undefined&level=NaN
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0159s ]
+SQL: INSERT INTO `think_node` (`name`,`title`,`status`,`pid`,`level`) VALUES ('loj','咯模块','1','0','0') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `think_node` WHERE `name` = 'loj' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-12-17T19:32:09+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0128s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001713s ]
+
+[ 2016-12-17T19:32:33+08:00 ] ::1 /js/hyc_admin/index.php/Index/addNode.html?name=er&title=&status=1&pid=undefined&level=NaN
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0219s ]
+SQL: INSERT INTO `think_node` (`name`,`title`,`status`,`pid`,`level`) VALUES ('er','','1','0','0') [ RunTime:0.0015s ]
+SQL: SELECT * FROM `think_node` WHERE `name` = 'er' LIMIT 1   [ RunTime:0.0024s ]
+
+[ 2016-12-17T19:33:16+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0163s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001556s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002924s ]
+
+[ 2016-12-17T19:39:38+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0142s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001891s ]
+
+[ 2016-12-17T19:39:47+08:00 ] ::1 /js/hyc_admin/index.php/Index/addNode.html?name=xc&title=&status=1&pid=undefined&level=NaN
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0108s ]
+SQL: INSERT INTO `think_node` (`name`,`title`,`status`,`pid`,`level`) VALUES ('xc','','1','0','0') [ RunTime:0.0006s ]
+SQL: SELECT * FROM `think_node` WHERE `name` = 'xc' LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2016-12-17T20:03:55+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0061s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014921s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2016-12-17T20:04:03+08:00 ] ::1 /js/hyc_admin/index.php/Index/addNode.html?name=dfg&title=&status=1&pid=undefined&level=NaN
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000113s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0075s ]
+SQL: INSERT INTO `think_node` (`name`,`title`,`status`,`pid`,`level`) VALUES ('dfg','','1','0','0') [ RunTime:0.0005s ]
+SQL: SELECT * FROM `think_node` WHERE `name` = 'dfg' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2016-12-17T20:05:08+08:00 ] ::1 /js/hyc_admin/Index/node
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0133s ]
+SQL: SELECT `id`,`name`,`title`,`status`,`pid`,`level` FROM `think_node`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+NOTIC: [8] Undefined variable: row C:\WWW\js\hyc_admin\Application\Runtime\Cache\Rbac\a44b924f113f14fd2ab32a6eb02b4422.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001670s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002257s ]
+
+[ 2016-12-17T20:05:14+08:00 ] ::1 /js/hyc_admin/index.php/Index/addNode.html?name=sd&title=&pid=undefined&level=NaN
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0073s ]
+SQL: INSERT INTO `think_node` (`name`,`title`,`pid`,`level`) VALUES ('sd','','0','0') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `think_node` WHERE `name` = 'sd' LIMIT 1   [ RunTime:0.0006s ]
+

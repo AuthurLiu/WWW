@@ -27,13 +27,18 @@ class IndexController extends Controller {
         }
     }
     public function node(){
+        $nodeInitData = M('node')->field('sort,remark',true)->select();
+         // dump($nodeInitData);die;
+        $nodeInitData = listRemerge($nodeInitData);
+        
+        $this->nodeInitData = $nodeInitData;
         $this->display();
 
     }
     public function addnode(){
-        // if(!IS_AJAX){
-        //  E('页面不存在');
-        // }
+        if(!IS_AJAX){
+         E('页面不存在');
+        }
         $name = I('name');
         M('node')->add($_GET);
        
